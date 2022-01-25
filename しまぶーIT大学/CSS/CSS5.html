@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style5.css" />
+  </head>
+  <body>
+    <a href="https://flexboxfroggy.com">https://flexboxfroggy.com</a>
+    <br />
+    <p>justify-content-アイテムの水平方向の位置を指定する-</p>
+    <div class="content jus-con-flex-start">
+      <div class="frog">frog</div>
+      <div class="frog">frog</div>
+    </div>
+
+    <div class="content jus-con-flex-end">
+      <div class="frog">frog</div>
+      <div class="frog">frog</div>
+    </div>
+
+    <div class="content jus-con-center">
+      <div class="frog">frog</div>
+      <div class="frog">frog</div>
+    </div>
+
+    <div class="content jus-con-space-between">
+      <div class="frog">frog</div>
+      <div class="frog">frog</div>
+    </div>
+
+    <div class="content jus-con-space-around">
+      <div class="frog">frog</div>
+      <div class="frog">frog</div>
+    </div>
+
+    <br />
+    <p>align-items-アイテムの垂直方向の位置を指定する-</p>
+    <div class="flex-container">
+      <div class="content2 flex ali-itm-flex-start">
+        <div class="frog">frog</div>
+        <div class="frog" style="height: auto">frog</div>
+      </div>
+      <div class="content2 flex ali-itm-flex-end">
+        <div class="frog">frog</div>
+        <div class="frog" style="height: 260px">frog</div>
+      </div>
+      <div class="content2 flex ali-itm-center">
+        <div class="frog">frog</div>
+        <div class="frog" style="height: 260px">frog</div>
+      </div>
+      <div class="content2 flex ali-itm-baseline">
+        <div class="frog">frog</div>
+        <div class="frog" style="height: 260px">frog</div>
+      </div>
+      <div class="content2 flex ali-itm-stretch">
+        <div class="frog">frog</div>
+        <div class="frog" style="height: auto">frog</div>
+      </div>
+    </div>
+
+    <br />
+    <p>flex-direction-アイテムの並び順を指定する-</p>
+    <div class="content jus-con-center flex-direc-row">
+      <div class="frog">frog</div>
+      <div class="frog bg-yellow">frog</div>
+      <div class="frog bg-red">frog</div>
+    </div>
+
+    <div class="content jus-con-center flex-direc-row-reverse">
+      <div class="frog">frog</div>
+      <div class="frog bg-yellow">frog</div>
+      <div class="frog bg-red">frog</div>
+    </div>
+    <div class="content ali-itm-center flex-direc-column">
+      <div class="frog">frog</div>
+      <div class="frog bg-yellow">frog</div>
+      <div class="frog bg-red">frog</div>
+    </div>
+    <div class="content ali-itm-center flex-direc-column-reverse">
+      <div class="frog">frog</div>
+      <div class="frog bg-yellow">frog</div>
+      <div class="frog bg-red">frog</div>
+    </div>
+
+    <br />
+    <p>order-アイテムの並び順を指定-</p>
+    <div class="content">
+      <div class="frog">frog</div>
+      <div class="frog bg-yellow order1">frog</div>
+      <div class="frog bg-red">frog</div>
+    </div>
+    <div class="content">
+      <div class="frog">frog</div>
+      <div class="frog bg-yellow order1">frog</div>
+      <div class="frog bg-red orderMinus1">frog</div>
+    </div>
+
+    <br />
+    <p>align-self-アイテムの垂直方向の位置を指定-</p>
+    <div class="flex-container">
+      <div class="content2 flex ali-itm-flex-start">
+        <div class="frog">frog</div>
+        <div class="frog align-self-flex-end">frog</div>
+        <div class="frog">frog</div>
+      </div>
+    </div>
+
+    <br />
+    <p>flex-wrap-アイテムの折り返しを指定する-</p>
+    <div class="flex-container">
+      <div class="content2">
+        <div class="frog">frog</div>
+        <div class="frog">frog</div>
+        <div class="frog">frog</div>
+      </div>
+      <div class="content2 flex-wrap-wrap">
+        <div class="frog">frog</div>
+        <div class="frog">frog</div>
+        <div class="frog">frog</div>
+      </div>
+    </div>
+
+    <br />
+    <p>flex-flow-アイテムの並び順と折り返しを一括で指定する-</p>
+    <div class="content">
+      <div class="frog">frog</div>
+      <div class="frog">frog</div>
+      <div class="frog bg-yellow">frog</div>
+      <div class="frog bg-yellow">frog</div>
+      <div class="frog bg-red">frog</div>
+      <div class="frog bg-red">frog</div>
+    </div>
+
+    <div class="content flex-flow">
+      <div class="frog">frog</div>
+      <div class="frog">frog</div>
+      <div class="frog bg-yellow">frog</div>
+      <div class="frog bg-yellow">frog</div>
+      <div class="frog bg-red">frog</div>
+      <div class="frog bg-red">frog</div>
+    </div>
+
+    <br />
+    <p>
+      align-content-アイテムの<span style="color: red">行の</span
+      >垂直方向の位置を指定する-
+    </p>
+    <div class="flex-container">
+      <div class="content2 flex-wrap-wrap">
+        <div class="frog">frog</div>
+        <div class="frog">frog</div>
+        <div class="frog">frog</div>
+      </div>
+      <div class="content2 flex-wrap-wrap align-content-flex-start">
+        <div class="frog">frog</div>
+        <div class="frog">frog</div>
+        <div class="frog">frog</div>
+      </div>
+    </div>
+  </body>
+</html>

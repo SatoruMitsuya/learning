@@ -1,0 +1,87 @@
+body {
+  font-size: 2rem;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+}
+
+main {
+  width: 700px;
+  margin: 0 auto;
+  /* flex: 1; */
+}
+
+aside {
+  width: 25%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  height: 300px;
+  margin-top: auto;
+}
+
+footer {
+  display: none;
+}
+
+/* メディアクエリ　メディアタイプ　メディア属性　論理演算子 */
+
+/* メディアタイプ */
+/* @media screen　主に画面のためのものです。 */
+/* @media all　すべての端末（省略可能） */
+/* @media print　ページ付きの素材や、印刷プレビューモードで画面に表示された文書のためのもの */
+/* @media speech　主に音声合成のためのものです。（すでに使われないもの） */
+
+/* メディア属性 */
+/* @media (min-width: 600px) */
+/* @media (max-width: 980px) */
+/* @media (orientation: landscape)  */
+
+/* 論理演算子 */
+/* @media screen and (max-width: 980px) and (orientation: landscape) */
+/* @media not screen and (max-width: 980px) and (orientation: landscape) */
+/* @media (max-width: 1000px) , (width: 500px)  */
+
+@media screen and (max-width: 1000px) {
+  body {
+    height: 1500px;
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+    flex: 1;
+  }
+
+  footer {
+    display: block;
+    margin-bottom: 48px;
+  }
+
+  div {
+    display: none;
+  }
+
+  aside {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    flex: 1;
+  }
+}

@@ -1,0 +1,95 @@
+/* # flex プロパティ */
+/* - 準備 */
+.ruler-m {
+  width: 1000px;
+  display: flex;
+  box-sizing: border-box;
+}
+.ruler {
+  height: 20px;
+  border: 0.5px solid black;
+  background-color: springgreen;
+  flex: 1;
+}
+
+p {
+  all: unset;
+  height: 15px;
+}
+.container {
+  width: 1000px;
+  background-color: coral;
+  display: flex;
+}
+
+.item {
+  height: 50px;
+  box-sizing: border-box;
+  border: 0.5px solid black;
+}
+
+.item1 {
+  background-color: pink;
+}
+
+.item2 {
+  background-color: skyblue;
+}
+
+/* - flex */
+.item-flex1 {
+  background-color: pink;
+  flex: 3;
+  /* flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%; */
+}
+
+.item-flex2 {
+  background-color: skyblue;
+  flex: 2;
+}
+
+/* - flex-grow 全体の残りを配分する1000-100-200=700/2=350が配分*/
+.item-flex-grow1 {
+  background-color: pink;
+  flex-grow: 1;
+}
+
+.item-flex-grow2 {
+  background-color: skyblue;
+  flex-grow: 1;
+}
+
+.w1 {
+  width: 100px;
+}
+
+.w2 {
+  width: 200px;
+}
+/* - flex-shrink ｆlex-growの逆 オーバーした分をどのように縮めるか*/
+.item-flex-shrink1 {
+  background-color: pink;
+  width: 1000px;
+  flex-shrink: 1;
+}
+
+.item-flex-shrink2 {
+  background-color: skyblue;
+  width: 1000px;
+  flex-shrink: 2;
+}
+
+/* - flex-basis どのぐらいの割合を保持するか*/
+.item-flex-basis1 {
+  background-color: pink;
+  flex-grow: 1;
+  flex-basis: 100px; /* =width: 100px; */
+}
+
+.item-flex-basis2 {
+  background-color: skyblue;
+  flex-grow: 1;
+  flex-basis: 200px; /* =width: 200px; */
+}

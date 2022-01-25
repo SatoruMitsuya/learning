@@ -1,0 +1,140 @@
+/* #セレクタ */
+
+/* ##要素・クラス・IDによるセレクタ */
+
+/* -タイプセレクタ(div, p, header, ...etc) */
+/* h1,
+p {
+  background-color: pink;
+} */
+
+/* - class */
+/* .title {
+  background-color: pink;
+}
+.big {
+  font-size: 60px;
+} */
+.title.big {
+  background-color: pink;
+}
+.big {
+  font-size: 60px;
+}
+
+/* - id　詳細度*/
+#title {
+  background-color: purple;
+}
+
+/* -ユニバーサルセレクタ */
+/* * {
+  color: red;
+} */
+/* article * {
+  color: red;
+} */
+
+/* ## 属性によるセレクタ */
+
+/* - 存在や値のセレクター */
+/* a[href] {
+  color: red;
+} */
+/* a[href="https://www.yahoo.com"]
+{
+  color: red;
+} */
+
+/* - 部分文字列一致のセレクター */
+
+/* 先頭から一致 */
+/* a[href^="https://www"]
+{
+  color: red;
+} */
+
+/* 部分一致 */
+/* a[href*="google"] {
+  color: red;
+} */
+
+/* 最後が一致 */
+a[href$=".co.jp"] {
+  color: red;
+}
+
+/* ## 疑似クラスおよび疑似要素によるセレクター */
+
+/* - :first-child, :first-of-type */
+
+/* 初めに出現するPタグ */
+/* article p:first-of-type {
+  color: red;
+}
+
+article p:last-of-type {
+  color: blue;
+}
+
+article p:nth-of-type(2) {
+  color: green;
+} */
+
+/* 初めに出現するタグ（すぐ下のh1が選ばれる） */
+/* article p:first-child {
+  color: red;
+} */
+
+/* - :not */
+article p:not(:first-of-type) {
+  color: aqua;
+}
+/* - :hover */
+p:hover {
+  background-color: yellow;
+}
+p:not(:hover) {
+  background-color: pink;
+}
+/* - ::after ::before */
+h1::after {
+  content: "!!!!";
+}
+
+h1::before {
+  content: "aaaa";
+}
+/* - ::first-line */
+p::first-line {
+  color: rgb(36, 114, 0);
+}
+p::first-letter {
+  font-size: 50px;
+  color: rgb(25, 0, 94);
+}
+
+/* ##結合子 */
+
+/* - descendant combinator（子孫結合子） */
+article p {
+  font-style: italic;
+}
+main article h1 {
+  background-color: rgb(42, 99, 126);
+}
+
+/* - child combinator（子結合子） */
+main > h1 {
+  color: red;
+}
+
+/* - adjacent sibling combinator（隣接兄弟結合子） */
+article p + p {
+  margin: 40px;
+  color: aqua;
+}
+/* - general sibling combinator（一般兄弟結合子） */
+article h1 ~ p {
+  color: red;
+}

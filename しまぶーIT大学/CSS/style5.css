@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  width: 600px;
+  height: 600px;
+}
+
+.flex {
+  flex: 1;
+}
+
+.content {
+  display: flex;
+  min-width: 600px;
+  margin: 0;
+  background-color: #43a047;
+}
+.content2 {
+  display: flex;
+  width: 130px;
+  margin: 0;
+  background-color: #43a047;
+}
+
+.jus-con-flex-start {
+  justify-content: flex-start;
+}
+
+.jus-con-flex-end {
+  justify-content: flex-end;
+}
+
+.jus-con-center {
+  justify-content: center;
+}
+.jus-con-space-between {
+  justify-content: space-between;
+}
+.jus-con-space-around {
+  justify-content: space-around;
+}
+
+.ali-itm-flex-start {
+  align-items: flex-start;
+}
+.ali-itm-flex-end {
+  align-items: flex-end;
+}
+.ali-itm-center {
+  align-items: center;
+}
+.ali-itm-baseline {
+  align-items: baseline;
+}
+.ali-itm-stretch {
+  align-items: stretch;
+}
+
+.flex-direc-row {
+  flex-direction: row;
+}
+.flex-direc-row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-direc-column {
+  flex-direction: column;
+}
+.flex-direc-column-reverse {
+  flex-direction: column-reverse;
+}
+
+div {
+  display: block;
+}
+
+.frog {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 50px 0px;
+  background-color: green;
+  width: 130px;
+  height: 130px;
+}
+
+.frog.bg-red {
+  background-color: red;
+}
+
+.frog.bg-yellow {
+  background-color: yellow;
+}
+
+.frog.order1 {
+  order: 1;
+}
+
+.frog.orderMinus1 {
+  order: -1;
+}
+
+.frog.align-self-flex-end {
+  /* align-self: flex-start; */
+  align-self: flex-end;
+  /* align-self: center; */
+  /* align-self: baseline; */
+  /* align-self: stretch; */
+}
+
+.flex-wrap-wrap {
+  /* flex-wrap: nowrap;(default) */
+  flex-wrap: wrap;
+  /* flex-wrap: wrap-reverse; */
+}
+
+.flex-flow {
+  /* flex-direction: column;
+  flex-wrap: wrap; */
+  flex-flow: column wrap;
+  height: 260px;
+}
+
+.align-content-flex-start {
+  align-content: flex-start;
+  /* align-content: flex-end; */
+  /* align-content: center; */
+  /* align-content: space-between; */
+  /* align-content: space-around; */
+  /* align-content: stretch; */
+}

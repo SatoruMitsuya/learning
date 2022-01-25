@@ -1,0 +1,30 @@
+html {
+    background-color: aqua;
+}
+
+head {
+    background-color: brown;
+}
+
+title {
+    background-color: deeppink;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+header {
+    background-color: cadetblue;
+    width: max-content;
+}
+
+main {
+    background-color: coral;
+    width: 90%;
+}
+
+footer {
+    background-color: chartreuse;
+    width: 500px;
+}

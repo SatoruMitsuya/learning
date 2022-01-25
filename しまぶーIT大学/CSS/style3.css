@@ -1,0 +1,67 @@
+/* #カスケード */
+
+/* - CSSルールの順序（例で確認） */
+/* - カスケード順 */
+
+/*  Origin        Importance
+1.  user agent    normal
+2.  user          normal
+3.  author        normal
+4.  animations          
+5.  author        !important
+6.  user          !important
+7.  user agent    !important
+8.  transitions             */
+
+/* # 詳細度 */
+
+/* - 複数のルールが適用された場合の優先度（例で確認） */
+/* - 詳細度のスコアリング */
+#title {
+  color: red;
+}
+
+.a.b.c.d.e.f.g.h.i.j.k {
+  color: blue;
+}
+
+h1 {
+  color: green;
+}
+
+/* - !important */
+h1 {
+  color: orange !important;
+}
+
+/* # 継承 */
+
+/* - 親要素から子要素へプロパティ値を引き継ぐ（例で確認） */
+/* - 継承の制御 */
+li {
+  color: red;
+}
+/* -- ユニバーサルプロパティ値 inherit, initial, unset */
+li a[href*="yahoo"] {
+  color: inherit; /* 親要素から値を引き継ぐ */
+}
+li a[href*="google"] {
+  color: initial; /* ブラウザが持ってるデフォルト値を引き継ぐ */
+}
+li a[href*="apple"] {
+  color: unset; /* inheritとinitialの組み合わせ 優先度1.inherit 2.initial */
+}
+
+/* -- すべてのプロパティ値のリセット all:unset*/
+div {
+  background-color: red;
+  border: 3px solid black;
+}
+/* .fix {
+  background-color: initial;
+  border: initial;
+} */
+
+.fix {
+  all: unset;
+}

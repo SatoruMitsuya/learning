@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style4.css" />
+  </head>
+  <body style="margin: 0">
+    <div class="normal"><span>ノーマルのスタイルブロック</span></div>
+    <div class="box"><span>ボックススタイルブロック</span></div>
+    <div class="box boxSizing">
+      <span>ボックスサイジングスタイルブロック</span>
+    </div>
+    <div class="margin1"><span>マージン相殺の説明用のブロック１</span></div>
+    <div class="margin2"><span>マージン相殺の説明用のブロック２</span></div>
+    <br />
+
+    <p>ブロックボックスとインラインボックス</p>
+    <div class="blockBox0">私はブロックです</div>
+    <hr />
+    <span class="inlineBox0">私はインラインです</span>
+
+    <br />
+    <br />
+    <p>1. 改行されるかどうか</p>
+    <div class="blockBox1">私はブロックです</div>
+    <div class="blockBox1">私はブロックです</div>
+    <div class="blockBox1">私はブロックです</div>
+    <hr />
+    <span class="inlineBox1">私はインラインです</span>
+    <span class="inlineBox1">私はインラインです</span>
+    <span class="inlineBox1">私はインラインです</span>
+
+    <br />
+    <br />
+    <p>2. width,height プロパティの挙動</p>
+    <div class="blockBox2">私はブロックです</div>
+    <hr />
+    <span class="inlineBox2">私はインラインです</span>
+
+    <br />
+    <br />
+    <p>3. padding,margin,borderの挙動</p>
+    <div class="example">
+      ブロック内の<span>インライン</span>です。インラインの場合は margin,
+      padding, border がきたときに他の要素のことを考えません。
+    </div>
+    <div class="example">
+      ブロック内の
+      <div>ブロック</div>
+      です。インラインの場合は margin, padding, border
+      がきたときに他の要素のことを考えません。
+    </div>
+
+    <p>displayプロパティで変更できる</p>
+    <div class="example">
+      ブロック内の<span class="displayBlock">インライン</span
+      >です。インラインの場合は margin, padding, border
+      がきたときに他の要素のことを考えません。
+    </div>
+    <div class="example">
+      ブロック内の
+      <div class="displayInline">ブロック</div>
+      です。インラインの場合は margin, padding, border
+      がきたときに他の要素のことを考えません。
+    </div>
+
+    <p>inline-blockについて</p>
+    <div class="example">
+      ブロック内の<span class="displayInlineBlock">インライン</span
+      >です。インラインの場合は margin, padding, border
+      がきたときに他の要素のことを考えません。
+    </div>
+  </body>
+</html>

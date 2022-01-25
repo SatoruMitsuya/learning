@@ -1,0 +1,16 @@
+/* div {
+  width: 400px;
+  height: 400px;
+  background-color: coral;
+} */
+
+div {
+  /* width: min(400px, 50vw); */
+  /* width: max(400px, 50vw); */
+  /* width: clamp(400px, 50vw, 600px); */
+  width: 100vw;
+  height: 400px;
+  background-color: pink;
+  /* font-size: clamp(16px, 3vw, 32px); */
+  font-size: clamp(16px, 1rem + 3vw, 32px);
+}
