@@ -1,0 +1,68 @@
+div {
+  font-size: 16px;
+  border: 1px dotted #000;
+  text-align: right;
+}
+
+span {
+  background-color: #fff;
+  opacity: 0.65;
+}
+
+.basPlus {
+  /* z-index: 1; */
+  position: relative;
+  width: 600px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background-color: #ccc;
+}
+
+.basPlusAbu {
+  /* z-index: 2; */
+  position: absolute;
+  width: 550px;
+  height: 350px;
+  top: 0;
+  left: 0;
+  background-color: #aaa;
+}
+.based {
+  z-index: 1;
+  position: relative;
+  width: 500px;
+  height: 300px;
+  top: 0;
+  left: 0;
+  background-color: #bae9ba;
+}
+
+.level1 {
+  z-index: 2;
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 25px;
+  left: 100px;
+  background-color: #f00;
+}
+.level2 {
+  z-index: 3;
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  top: 90px;
+  left: 150px;
+  background-color: #0f0;
+}
+.level3 {
+  z-index: 3;
+  position: absolute;
+  background-image: url(https://source.unsplash.com/random/100x100);
+  width: 100px;
+  height: 100px;
+  top: 5px;
+  left: 80px;
+  background-color: #00f;
+}
