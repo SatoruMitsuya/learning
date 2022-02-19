@@ -1,0 +1,51 @@
+.body {
+  color: #333;
+  font-family: verdana, sans-serif;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-align--center {
+  align-items: center;
+}
+
+.header {
+  background-color: #efefef;
+  padding: 32px 0;
+  width: 100%;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.container-photo {
+  width: 400px;
+  height: auto;
+}
+
+.profile-photo {
+  border: 4px;
+  border-radius: 50%;
+}
+
+.info {
+  margin-left: 32px;
+}
+
+.info > * {
+  margin: 0;
+}
+
+.link-icon {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.link-icon > * {
+  margin-right: 8px;
+}
