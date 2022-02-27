@@ -1,0 +1,32 @@
+XDデザイン
+
+https://xd.adobe.com/view/d88da053-8f45-421f-8def-ed3838ccb6e2-8dde/
+
+
+
+Orbitron Bold
+<link rel="stylesheet" href="https://use.typekit.net/lsh2xex.css">
+
+font-family: orbitron, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Source Han Sans Japanese
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'kin8ynp',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+font-family: source-han-sans-japanese, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: source-han-sans-japanese, sans-serif;
+font-weight: 700;
+font-style: normal;
