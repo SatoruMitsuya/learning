@@ -1,15 +1,36 @@
-.body {
-  color: #333;
-  font-family: verdana, sans-serif;
-  margin: 0;
-}
-
 .flex {
   display: flex;
 }
 
 .flex-align--center {
   align-items: center;
+}
+
+.profile-photo {
+  /* border: 4px solid #fff; */ /* こっちもOK */
+  border: solid #fff 4px;
+  border-radius: 50%;
+}
+
+.profile-info {
+  margin-left: 32px;
+}
+
+.link-icon {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-icon li {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.body {
+  font-family: verdana, sans-serif;
+  margin: 0;
 }
 
 .header {
@@ -20,32 +41,31 @@
 
 .container {
   width: 400px;
-  margin: 0 auto;
+  margin: auto;
+}
+
+.h1 {
+  font-size: 24px;
+  margin: 60px auto;
+  text-align: center;
 }
 
 .container-photo {
-  width: 400px;
-  height: auto;
+  width: 100%;
+  /* width: 400px; */
 }
 
-.profile-photo {
-  border: 4px;
-  border-radius: 50%;
+.h2 {
+  font-size: 1.17em;
+  font-weight: normal;
 }
 
-.info {
-  margin-left: 32px;
+.container-text {
+  line-height: 1.8;
 }
 
-.info > * {
-  margin: 0;
-}
-
-.link-icon {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.link-icon > * {
-  margin-right: 8px;
+.footer p {
+  margin: 14px auto 60px auto;
+  font-size: 14px;
+  text-align: center;
 }
