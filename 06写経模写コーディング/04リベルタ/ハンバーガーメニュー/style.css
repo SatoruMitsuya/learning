@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  height: 200vh;
+}
+
+.menuButton {
+  display: block;
+  height: 80px;
+  width: 80px;
+  background-color: rgb(255, 123, 204);
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.menuButton div {
+  height: 1px;
+  width: 60%;
+  background-color: #333;
+  position: absolute;
+  top:  50%;
+  left: 50%;
+
+
+  /* アニメーション時間 */
+  transition: 0.3s;
+}
+
+.menuButton div:nth-of-type(1) {
+  transform: translate(-50%, -15px);
+}
+
+.menuButton div:nth-of-type(2) {
+  transform: translate(-50%, 0);
+}
+
+.menuButton div:nth-of-type(3) {
+  transform: translate(-50%, +15px);
+}
+
+.menuButton.active div:nth-of-type(1) {
+  /* 回転の動き */
+  /* transform-origin: 0% 50%; */
+  /* transform: rotate(45deg) translate(-50%, -15px); */
+  /* transform: translate(-50%, 0px) rotate(45deg); */
+  transform: rotate(45deg) translate(-50%, 0);
+  transform-origin: 
+  transition-delay: ;
+  transition-duration
+}
+.menuButton.active div:nth-of-type(2) {
+  /* 消す動き */
+  opacity: 0;
+}
+.menuButton.active div:nth-of-type(3) {
+  /* 回転の動き */
+  /* transform-origin: 0% 50%; */
+  /* transform: rotate(-45deg) translate(-50%, 15px); */
+  /* transform: translate(-50%, 0px) rotate(-45deg); */
+  transform: rotate(-45deg) translate(-50%, 0);
+}
+
+nav {
+  opacity: 0;
+  /* transition（アニメーション）が効く。 */
+  visibility: hidden;
+  /* display: none; transition（アニメーション）が効かない。*/
+  transition: 0.3s;
+}
+
+nav.active {
+  opacity: 1;
+  visibility: visible;
+}
