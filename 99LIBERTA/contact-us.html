@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/destyle.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="bodySiteTop">
+    <div class="top-link_click">Liberta take out new business >>click</div>
+    <h1 class="shopLogo">
+      <img src="./images/shop_logo.webp" alt="お店のロゴ" />
+    </h1>
+
+    <nav class="Menu">
+      <div class="Menu-Header">MENU</div>
+      <ul class="Menu-List">
+        <li class="Menu-List-Item">
+          <a href="./index.html" class="Menu-List-Item-Link">Home</a>
+        </li>
+        <li class="Menu-List-Item">
+          <a href="#bodySiteTop" class="Menu-List-Item-Link">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="Button">
+      <div class="Button-Line__Top"></div>
+      <div class="Button-Line__Medium"></div>
+      <div class="Button-Line__Bottom"></div>
+    </button>
+
+    <div class="Overlay"></div>
+
+    <footer class="footer">
+      Copyright (C) 2007 自家製生パスタ ラ・オステリア All rights reserved
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const menu = $(".Menu");
+      const button = $(".Button");
+      const buttonLineTop = $(".Button-Line__Top"); //追加
+      const buttonLineMedium = $(".Button-Line__Medium"); //追加
+      const buttonLineBottom = $(".Button-Line__Bottom"); //追加
+      const overlay = $(".Overlay");
+      const MenuListItemLink = $(".Menu-List-Item-Link");
+
+      const body = $(document.body);
+
+      const toggleMenu = () => {
+        menu.toggleClass("Menu-isOpen");
+        buttonLineTop.toggleClass("Button-Line__Top__isOpen"); //追加
+        buttonLineMedium.toggleClass("Button-Line__Medium__isOpen"); //追加
+        buttonLineBottom.toggleClass("Button-Line__Bottom__isOpen"); //追加
+        overlay.toggleClass("Overlay__isOpen");
+        body.toggleClass("IsScrollAllowed");
+      };
+
+      button.on("click", () => {
+        toggleMenu();
+      });
+
+      overlay.on("click", () => {
+        toggleMenu();
+      });
+
+      MenuListItemLink.on("click", () => {
+        toggleMenu();
+      });
+    </script>
+  </body>
+</html>
